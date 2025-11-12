@@ -1,5 +1,10 @@
 {
-  "redirects": [
-    { "source": "/", "destination": "/Website/index.html" }
+  "version": 2,
+  "builds": [
+    { "src": "Website/index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "Website/index.html" }
   ]
 }
+  
