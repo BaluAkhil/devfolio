@@ -215,7 +215,7 @@
       <a href="mailto:baluakhil4444@gmail.com" class="flex items-center gap-2 hover:text-teal-400 transition">
         📧 <span>baluakhil4444@gmail.com</span>
       </a>
-      <a href="www.linkedin.com/in/akhilbalu" target="_blank" class="flex items-center gap-2 hover:text-teal-400 transition">
+      <a href="https://www.linkedin.com/in/akhilbalu/" target="_blank" class="flex items-center gap-2 hover:text-teal-400 transition">
         🔗 <span>LinkedIn</span>
       </a>
       <a href="https://github.com/BaluAkhil" target="_blank" class="flex items-center gap-2 hover:text-teal-400 transition">
@@ -231,11 +231,19 @@
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
+  const menuLinks = mobileMenu.querySelectorAll("a");
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
 </script>
+
 
 
 </body>
