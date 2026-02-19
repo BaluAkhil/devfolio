@@ -6,7 +6,7 @@
 <title>Akhil Balu - Portfolio</title>
 
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
 <link rel="icon" href="akhilphoto.jpg" type="image/jpeg">
@@ -87,21 +87,21 @@ section{
 <!-- HEADER -->
 
 <header class="border-b sticky top-0 bg-gray-900/70 z-50 shadow-sm">
-<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-<h1 class="text-xl font-bold flex items-center space-x-2">
-<span class="w-4 h-4 bg-teal-500 inline-block rounded-sm"></span>
-<span>Akhil Balu</span>
-</h1>
+  <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold flex items-center space-x-2">
+      <span class="w-4 h-4 bg-teal-500 inline-block rounded-sm"></span>
+      <span>Akhil Balu</span>
+    </h1>
 
-<nav class="space-x-8 text-sm font-medium text-white hidden md:flex">
-<a href="#about" onclick="scrollToSection(event,'about')" class="hover:text-teal-400">About</a>
-<a href="#skills" onclick="scrollToSection(event,'skills')" class="hover:text-teal-400">Skills</a>
-<a href="#education" onclick="scrollToSection(event,'education')" class="hover:text-teal-400">Education</a>
-<a href="#experience" onclick="scrollToSection(event,'experience')" class="hover:text-teal-400">Experience</a>
-<a href="#projects" onclick="scrollToSection(event,'projects')" class="hover:text-teal-400">Projects</a>
-<a href="#contact" onclick="scrollToSection(event,'contact')" class="hover:text-teal-400">Contact</a>
-</nav>
-</div>
+    <nav class="space-x-8 text-sm font-medium text-white hidden md:flex">
+      <a href="#about" onclick="scrollToSection(event,'about')" class="hover:text-teal-400">About</a>
+      <a href="#skills" onclick="scrollToSection(event,'skills')" class="hover:text-teal-400">Skills</a>
+      <a href="#education" onclick="scrollToSection(event,'education')" class="hover:text-teal-400">Education</a>
+      <a href="#experience" onclick="scrollToSection(event,'experience')" class="hover:text-teal-400">Experience</a>
+      <a href="#projects" onclick="scrollToSection(event,'projects')" class="hover:text-teal-400">Projects</a>
+      <a href="#contact" onclick="scrollToSection(event,'contact')" class="hover:text-teal-400">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <!-- ABOUT -->
@@ -132,22 +132,102 @@ class="inline-block px-6 py-2 text-sm font-semibold bg-teal-600 text-white round
 </section>
 
 <!-- SKILLS -->
-
 <section id="skills" class="reveal py-20 px-6">
   <div class="max-w-6xl mx-auto">
+
     <h2 class="text-3xl font-bold text-center mb-12 text-teal-400">Professional Skills</h2>
-        <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2 text-teal-400">.NET Full Stack Development</h3>
-            <p class="text-gray-300 leading-relaxed">
-                Skilled in building scalable, high-performance web applications using ASP.NET Core, C#, and SQL Server. 
-                Experienced in designing RESTful APIs, implementing Entity Framework Core, and developing responsive 
-                user interfaces with HTML5, CSS3, JavaScript, and modern frameworks like Angular/React. 
-                Proficient in authentication & security (JWT, Identity), cloud deployment on Microsoft Azure, 
-                and applying clean architecture, SOLID principles, and performance optimization techniques.
-            </p>
-        </div>
+
+    <!-- Short Description -->
+    <p class="text-center text-gray-400 max-w-3xl mx-auto mb-12">
+      Building scalable, secure, and high-performance web applications using modern .NET technologies and cloud-ready architecture.
+    </p>
+
+    <!-- Skill Cards -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Backend -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-teal-400 mb-4">
+          <i class="fas fa-server mr-2"></i> Backend Development
+        </h3>
+
+        <ul class="space-y-4 text-gray-300">
+
+          <li>
+            ASP.NET Core & Web API
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[90%]"></div>
+            </div>
+          </li>
+
+          <li>
+            C# & OOP Principles
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[88%]"></div>
+            </div>
+          </li>
+
+          <li>
+            Entity Framework Core & LINQ
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[85%]"></div>
+            </div>
+          </li>
+
+          <li>
+            SQL Server & Performance Tuning
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[80%]"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Frontend & Cloud -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-teal-400 mb-4">
+          <i class="fas fa-cloud mr-2"></i> Frontend & Cloud
+        </h3>
+
+        <ul class="space-y-4 text-gray-300">
+
+          <li>
+            HTML5, CSS3, JavaScript
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[85%]"></div>
+            </div>
+          </li>
+
+          <li>
+            Angular / React Basics
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[70%]"></div>
+            </div>
+          </li>
+
+          <li>
+            Authentication & JWT Security
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[80%]"></div>
+            </div>
+          </li>
+
+          <li>
+            Microsoft Azure & Deployment
+            <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+              <div class="bg-teal-400 h-2 rounded-full w-[75%]"></div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
 
 <!-- EDUCATION -->
 
